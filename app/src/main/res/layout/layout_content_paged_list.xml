@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+            android:id="@+id/listBreadcrumbText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_grey_light"
+            android:padding="@dimen/spacing_mini"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_marginBottom="@dimen/spacing_mini"
+            tools:text="@string/list_breadcrumb" />
+
+    <com.barreto.android.presentation.base.view.PagedListLayout
+            android:id="@+id/content_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+</LinearLayout>
